@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+/* Universal */
+*{
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Body */
+body{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar{
+  width: 0.2rem;
+}
+body::-webkit-scrollbar-track{
+  background: #f0f0f0;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #333;
+}
+
+/* Component app */
+.App{
+  padding: 20px;
+  max-width: 768px;
+}
+
+.title{
+  font-size: 64px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+input{
+  margin: 10px;
+  padding: 10px 20px;
+
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  
+  background: transparent;
+  
+  border: 2px solid #333;
+  border-radius: 20px;
+  
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.1);
+  transition: all ease-in-out 250ms;
+}
+
+input:hover, input:focus{
+  padding: 10px 30px;
+  border-color: #555;
+}
+
+button{
+  margin: 10px;
+  padding: 10px 95px;
+  
+  border: none;
+  border-radius: 20px;
+  
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  background-color: #333;
+  
+  box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.1);
+  transition: all ease-in-out 250ms;
+}
+
+button:hover{
+  padding: 10px 100px;
+  opacity: 0.9;
+}
+
+.contacts{
+  margin-top: 40px;
+}
+
+.contact{
+  margin: 25px;
+  min-width: 512px;
+  padding: 40px 80px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-name{
+  color: #333;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.contact-telephone{
+  color: #555;
+  font-size: 16px;
+}
+
+.contact-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #333;
+  cursor: pointer;
+}
