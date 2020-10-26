@@ -3,12 +3,11 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const requireDir = require("require-dir");
 
-//Aplicação
 const app = express();
 app.use(express.json());
 app.use(cors());
 
-//Conectando ao banco
+//Database
 mongoose.connect("mongodb://localhost:27017/agenda", {
      useNewUrlParser: true,
      useUnifiedTopology: true,
@@ -16,6 +15,6 @@ mongoose.connect("mongodb://localhost:27017/agenda", {
 
 requireDir("./models");
 
-//Rotas
+//Routes
 app.use("/", require("./routes"));
 app.listen(3001);
